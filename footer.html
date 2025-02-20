@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma Webpage</title>
+    <style>
+      .footer {
+        background-color: #000;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        padding-top: 100px;
+        padding-bottom: 50px;
+      }
+
+      .start {
+        font-size: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin-bottom: 70px;
+      }
+      .btn button {
+        background-color: blue;
+        color: white;
+        padding: 15px 35px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 35px;
+        font-weight: 700;
+        margin-left: 100px;
+      }
+      .txt {
+        text-align: center;
+      }
+      @media (max-width: 1050px) and (min-width: 720px) {
+        .btn button {
+          padding: 12px 25px;
+          font-size: 27px;
+          margin-left: 50px;
+        }
+        .start {
+          font-size: 55px;
+        }
+      }
+      @media (max-width: 720px) {
+        .start {
+          display: block;
+        }
+        .btn button {
+          background-color: #f41616;
+          padding: 12px 20px;
+          font-size: 18px;
+          margin-left: 30px;
+        }
+        .start {
+          font-size: 30px;
+        }
+        .txt {
+          margin: 30px;
+          text-align: left;
+        }
+      }
+      /* Columns styles */
+      .columns {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding-left: 250px;
+        padding-right: 250px;
+        justify-content: center;
+      }
+      .column a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 25px;
+      }
+      .column a:hover {
+        text-decoration: underline;
+      }
+
+      .column h2 {
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+
+      .column ul {
+        list-style: none;
+      }
+
+      .column ul li {
+        margin-bottom: 5px;
+      }
+      @media (max-width: 650px) {
+        .columns {
+          grid-template-columns: repeat(2, 1fr);
+          padding-left: 20px;
+          padding-right: 50px;
+        }
+        .footer{
+            padding-top: 40px;
+            padding-bottom: 50px;
+        }
+      }
+      select{
+        background-color: #000;
+        border: none;
+        color: #fff;
+        display: block;
+        margin: 30px auto;
+      }
+      select:focus{
+        border: 1px dashed #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="footer">
+      <div class="start">
+        <div class="txt">Start making <br />with Figma</div>
+        <div class="btn">
+          <button>Get started for free</button>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <!----------------------------first column ------------------------->
+          <ul id="row">
+            <h2>Figma</h2>
+            <li><a href="#">X</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- ---------------------second column ---------------------------- -->
+          <ul>
+            <h2>Use Cases</h2>
+            <li><a href="#">UI design</a></li>
+            <li><a href="#">UX design</a></li>
+            <li><a href="#">Wireframing</a></li>
+            <li><a href="#">Diagramming</a></li>
+            <li><a href="#">Brainstorming</a></li>
+            <li><a href="#">Online whiteboard</a></li>
+            <li><a href="#">Team collaboration</a></li>
+            <li><a href="#">Agile workflows</a></li>
+            <li><a href="#">Strategic planning</a></li>
+            <li><a href="#">Mind mapping</a></li>
+            <li><a href="#">Concept mapping</a></li>
+            <li><a href="#">Org charts</a></li>
+            <li><a href="#">Online sticky notes</a></li>
+            <li><a href="#">Templates</a></li>
+            <li><a href="#">Remote design</a></li>
+            <li><a href="#">Agencies</a></li>
+            <li><a href="#">Figma for education</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- ---------------------three column---------------------------- -->
+          <ul>
+            <h2>Explore</h2>
+            <li><a href="#">Design features</a></li>
+            <li><a href="#">Prototyping features</a></li>
+            <li><a href="#">Design systems features</a></li>
+            <li><a href="#">Development Features</a></li>
+            <li><a href="#">Collaboration features</a></li>
+            <li><a href="#">Design process</a></li>
+            <li><a href="#">FigJam</a></li>
+            <li><a href="#">What's new</a></li>
+            <li><a href="#">Releases</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Enterprise</a></li>
+            <li><a href="#">Organization</a></li>
+            <li><a href="#">Professional</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Integrations</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- -------------four column---------------------------- -->
+          <ul>
+            <h2>Resources</h2>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Best practices</a></li>
+            <li><a href="#">Color wheel</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Resource library</a></li>
+            <li><a href="#">Reports & Insights</a></li>
+            <li><a href="#">Webinars</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Our story</a></li>
+            <li><a href="#">Affiliate program</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Legal and Privacy</a></li>
+            <li><a href="#">Modern Slavery Statement</a></li>
+            <li><a href="#">Climate Disclosure Statement </a></li>
+            <li><a href="#">Status </a></li>
+            <!-- Add more links here -->
+          </ul>
+        </div>
+        <div class="column">
+          <!-- ---------------------five column---------------------------- -->
+          <ul>
+            <h2>Compare</h2>
+            <li><a href="#">Sketch </a></li>
+            <li><a href="#">Adobe XD </a></li>
+            <li><a href="#">Invision Studio </a></li>
+            <li><a href="#">Framer </a></li>
+            <li><a href="#">Design on Windows </a></li>
+            <li><a href="#">Miro</a></li>
+          </ul>
+        </div>
+      </div>
+<select id="languages" name="languages">
+  <option value="en">English</option>
+  <option value="fr">French</option>
+  <option value="es">Spanish</option>
+  <option value="de">German</option>
+  <!-- Add more languages here -->
+</select>
+    </div>
+  </body>
+</html>
